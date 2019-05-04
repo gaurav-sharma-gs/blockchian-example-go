@@ -2,28 +2,17 @@ package main
 
 import (
 	"crypto/sha256"
-	_ "crypto/sha256"
 	"encoding/hex"
-	_ "encoding/hex"
 	"encoding/json"
-	_ "encoding/json"
+	"io"
+	"log"
+	"net/http"
+	"os"
+	"time"
+
 	"github.com/davecgh/go-spew/spew"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
-	"io"
-	_ "io"
-	"log"
-	_ "log"
-	"net/http"
-	_ "net/http"
-	"os"
-	_ "os"
-	"time"
-	_ "time"
-
-	_ "github.com/davecgh/go-spew/spew"
-	_ "github.com/gorilla/mux"
-	_ "github.com/joho/godotenv"
 )
 
 type Block struct {
